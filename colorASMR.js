@@ -158,12 +158,12 @@ function collide(){
       a = sprite1.x - sprite2.x;
       b = sprite1.y - sprite2.y;
       if(Math.sqrt(Math.pow(a, 2) + Math.pow(b,2)) <= canvas.width / 15){
-         why = new Trail((sprite1.x + sprite2.x)/2, (sprite1.y + sprite2.y)/2, (sprite1.b + sprite2.b)/2, (sprite1.g + sprite2.g)/2, (sprite1.b + sprite2.b)/2, 0, canvas.width / 20);
+         why = new Trail((sprite1.x + sprite2.x)/2, (sprite1.y + sprite2.y)/2, (sprite1.r + sprite2.r)/2, (sprite1.g + sprite2.g)/2, (sprite1.b + sprite2.b)/2, 0, canvas.width / 20);
         trailArray.push(why);
         sprite1.active = false;
         sprite2.active = false;
         for(let i = 0; i < 20; i++){
-          explosions = new Trail(Math.random() * canvas.width, Math.random() * canvas.height, (sprite1.b + sprite2.b)/2, (sprite1.g + sprite2.g)/2, (sprite1.b + sprite2.b)/2, 0, canvas.width / 45);
+          explosions = new Trail(Math.random() * canvas.width, Math.random() * canvas.height, (sprite1.r + sprite2.r)/2, (sprite1.g + sprite2.g)/2, (sprite1.b + sprite2.b)/2, 0, canvas.width / 45);
           trailArray.push(explosions);
           time = 0;
         }
