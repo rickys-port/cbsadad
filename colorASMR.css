@@ -1,7 +1,12 @@
-body{
+body {
     background-color: black;
-    text-align: center;
-  }
-  canvas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use 100% of the viewport height */
+    margin: 0;
+}
+
+canvas {
     background-color: white;
-  }
+}
